@@ -1,0 +1,36 @@
+
+ ####### Q1.1 
+Sentence Count: 80462 
+
+ ####### Q1.2 
+VB: 46277 
+VBD: 61880 
+VBG: 16359 
+VBN: 19960 
+VBP: 26252 
+VBZ: 21914
+Average --- 
+VB: 0.5751410603763267 
+VBD: 0.7690586860878427 
+VBG: 0.2033133653153041 
+VBN: 0.24806741070318908 
+VBP: 0.32626581491884366 
+VBZ: 0.2723521662399642
+Total average verbs per sentance: 2.3941985036414706
+ ####### Q1.3 
+Number of prepositions: 93223
+Top three prepositions: [(12254, 'of'), (11149, 'for'), (8885, 'in')]
+
+ ####### Q1.4 
+Entities count: 38940
+Entities in corpus: dict_keys(['TIME', 'CARDINAL', 'DATE', 'ORDINAL', 'ORG', 'QUANTITY', 'NORP', 'GPE', 'PERSON', 'LOC', 'PERCENT', 'WORK_OF_ART', 'MONEY', 'LANGUAGE', 'EVENT', 'PRODUCT', 'FAC', 'LAW'])
+
+[1.5]
+For constituent parsing
+  - The pos tagging seems inconsistent that results in different parsed trees. For instance a verb is tagged as noun.
+  - Root word is not as expected for some sentences.
+
+For Dependency parsing
+  - The pos tagging is not always correct which causes a change in relation between words
+
+Method to reduce error - POS tag with the help of more data might lead to a more robust and right tags which is consistent across all that could lead to less errors. Hence training with more data might reduce the errors
